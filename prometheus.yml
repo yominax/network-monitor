@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 5s
+  scrape_timeout: 3s
+
+scrape_configs:
+  - job_name: "network-monitor"
+    static_configs:
+      - targets:
+          - "172.24.141.232:8000"
+    metrics_path: "/metrics"
+

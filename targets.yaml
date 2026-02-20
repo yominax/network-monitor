@@ -1,0 +1,14 @@
+interval_seconds: 5
+targets:
+  - name: "google_dns"
+    host: "8.8.8.8"
+    icmp: true
+    tcp_ports: [53]
+    http_urls: []
+  - name: "example_http"
+    host: "example.org"
+    icmp: false
+    tcp_ports: []
+    http_urls:
+      - "http://example.org/"
+
